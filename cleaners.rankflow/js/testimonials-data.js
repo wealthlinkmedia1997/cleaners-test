@@ -1,27 +1,16 @@
 // ============================================================
-// ⚠ HOUSE CLEANERS FUNNEL — TESTIMONIALS NOT YET REPLACED
+// HOUSE CLEANERS funnel — testimonial content.
 //
-// Everything below is still the WINDOW TINT client list. These are real,
-// named businesses with real people on camera (Tint Veteran, Window Tint
-// Solutions Nashville, Warrior Windows...). Do NOT simply rename the
-// companies to house cleaning businesses - that would attribute invented
-// words to identifiable people, and it is exactly what FTC endorsement
-// rules prohibit.
+// Six real house cleaning clients. Videos and posters are self-hosted in
+// assets/videos/ and play as a plain <video> tag (see wireVideoCards() in
+// main.js). Posters are .png here.
 //
-// Two honest options:
-//   1. Record house cleaning clients and replace the entries below.
-//   2. Ship with these as-is. They are real and the quotes are about
-//      ranking, not tinting - but the company names will read as
-//      window businesses to a house cleaner, which weakens the proof.
+// The ?v=1 suffix is a cache-buster: bump it to ?v=2 whenever you REPLACE a
+// video or poster file, otherwise browsers keep serving the old one.
 //
-// Until then the page still renders; the social proof is just off-niche.
-// ============================================================
-// Testimonial content. videoSrc points at self-hosted mp4 files in
-// assets/videos/ — no Google Drive dependency, plays as a plain
-// <video> tag (see wireVideoCards() in main.js). Files were
-// downloaded from Drive and re-compressed with ffmpeg (720p width,
-// CRF 26, faststart) - originals were 6-7.5 Mbps / up to 91MB each,
-// compressed down to ~230-590 kb/s / 1-8MB each.
+// Note: quotes are stored WITHOUT surrounding quote marks. videoCardHTML()
+// in main.js already wraps each one in "..." when it renders, so including
+// them here would produce ""doubled quotes"".
 // ============================================================
 window.TESTIMONIALS = [
   {
@@ -29,106 +18,64 @@ window.TESTIMONIALS = [
     quote: "Super responsive from day one. They did exactly what they said they were going to do, kept us updated, and we started seeing results pretty quickly.",
     name: "Jim",
     company: "Jim Cleans",
-    videoSrc: "assets/videos/jim.mp4?v=3",
-    poster: "assets/videos/jim.png",
+    videoSrc: "assets/videos/jim.mp4?v=1",
+    poster: "assets/videos/jim.png?v=1",
   },
   {
     id: "jonathan",
     quote: "Went from barely getting calls to having my phone ring consistently. Our reviews climbed, rankings improved, and the leads started coming in fast.",
     name: "Jonathan",
     company: "Sparkle & Shine Cleaning",
-    videoSrc: "assets/videos/jonathan.mp4?v=3",
-    poster: "assets/videos/jonathan.png",
+    videoSrc: "assets/videos/jonathan.mp4?v=1",
+    poster: "assets/videos/jonathan.png?v=1",
   },
   {
     id: "nick",
     quote: "The results came way faster than I expected. More calls, better visibility, and a steady flow of new customers.",
     name: "Nick",
     company: "Eco Clean Earth",
-    videoSrc: "assets/videos/nick.mp4?v=3",
-    poster: "assets/videos/nick.png",
+    videoSrc: "assets/videos/nick.mp4?v=1",
+    poster: "assets/videos/nick.png?v=1",
   },
   {
-    id: "jims",
-    quote: "And literally within 30 days I'm at the top - I've had everyone tell me they could get me there but nobody could get me there",
-    name: "Jims",
-    company: "Accent Window Coverings Riverside CA",
-    videoSrc: "assets/videos/jim.mp4?v=3",
-    poster: "assets/videos/jim-poster.jpg",
+    id: "anthony",
+    quote: "Even during our slowest months in the winter, our phone is still ringing every single day. We're getting consistent calls when we used to struggle for leads.",
+    name: "Anthony",
+    company: "Brightway Cleaning Services",
+    videoSrc: "assets/videos/anthony.mp4?v=1",
+    poster: "assets/videos/anthony.png?v=1",
+  },
+  {
+    id: "paul",
+    quote: "Game changer for my business. We generated 8 large jobs and had our best month ever within just a few months.",
+    name: "Paul",
+    company: "Fresh Start Cleaning Co.",
+    videoSrc: "assets/videos/paul.mp4?v=1",
+    poster: "assets/videos/paul.png?v=1",
   },
   {
     id: "trevor",
-    quote: "By the time you're 2 or 3 companies in that burned you, your done. For some reason I trusted Andre and he got us number 1. I ONLY do my own jobs now, no subcontracting",
+    quote: "Literally within 30 days, I was at the top. I've had everyone tell me they could get me there, but nobody could actually get me there until now.",
     name: "Trevor",
-    company: "Warrior Windows Casa Grande AZ",
-    videoSrc: "assets/videos/trevor.mp4?v=3",
-    poster: "assets/videos/trevor-poster.jpg",
-  },
-  {
-    id: "mindi",
-    quote: "We have our gifts, we need to focus on what we do and marketers need to focus on what they do - in that short amount of time, the growth has been PHENOMENAL",
-    name: "Mindi",
-    company: "Metro Tinting Shutters and Blinds of Tulsa OK",
-    videoSrc: "assets/videos/mindi.mp4?v=3",
-    poster: "assets/videos/mindi-poster.jpg",
-  },
-  {
-    id: "chris",
-    quote: "2 months ago I wasnt getting calls, now my site presence has gone through the rough [over 100 5 star reviews] and getting calls every day",
-    name: "Chris",
-    company: "CK's Windows of Idaho Falls",
-    videoSrc: "assets/videos/chris.mp4?v=3",
-    poster: "assets/videos/chris-poster.jpg",
-  },
-  {
-    id: "natalie",
-    quote: "We were working with another company prior and now we see what a horrible job they did because Andre's team has been amazing",
-    name: "Natalie",
-    company: "Window & Door Repair Champions Irvine CA",
-    videoSrc: "assets/videos/natalie.mp4?v=3",
-    poster: "assets/videos/natalie-poster.jpg",
-  },
-  {
-    id: "danny",
-    quote: "I saw the ad and thought this would be a scammy thing and come to find out people we work with were very professional [2 new leads within one WEEK]",
-    name: "Danny",
-    company: "Sno King and Junk Removal - Washington",
-    videoSrc: "assets/videos/danny.mp4?v=3",
-    poster: "assets/videos/danny-poster.jpg",
-  },
-  {
-    // Not currently placed on any page — kept in case you want to bring it back.
-    // No local video file downloaded for this one yet.
-    id: "bryan",
-    quote: "When the economy is bad, people think you need to hold onto your money, what you need to do is fork over as much of it into the RIGHT marketing at this time... these past 2.5 months I have seen a HUGE difference in jobs",
-    name: "Bryan",
-    company: "Golden State Tinting Las Vegas",
-    videoSrc: "",
-    poster: "",
+    company: "ClearView Cleaning Services",
+    videoSrc: "assets/videos/trevor.mp4?v=1",
+    poster: "assets/videos/trevor.png?v=1",
   },
 ];
 
-// Explainer video shown at the top of booking/thank-you pages
-// ("Step 1: Watch This 2 Minute Video"). Still a placeholder - once you
-// have this file, same pattern: assets/videos/explainer.mp4.
+// The 2-minute explainer at the top of the booking and thank-you pages.
+// Set videoSrc to "" to hide that whole section (heading included).
 window.EXPLAINER_VIDEO = {
   videoSrc: "assets/videos/2min.mp4?v=1",
   poster: "assets/videos/2min.jpg?v=1",
   caption: "",
 };
 
-// Landing page (index.html) hero testimonials, in order
+// Homepage (index.html) — Jim, Jonathan, Nick
 window.HERO_TESTIMONIAL_IDS = ["jim", "jonathan", "nick"];
-// Booking pages (book-tracked.html + book-untracked.html), "P.S. check out
-// what our contractor clients have to say" section, in order
-window.BOOKING_TESTIMONIAL_IDS = ["jim", "trevor", "mindi"];
-// Thank-you page: Danny first, then everything from the booking pages, then
-// Chris and Natalie
-window.THANK_YOU_TESTIMONIAL_IDS = ["danny", "jim", "trevor", "mindi", "chris", "natalie"];
 
-// Final single testimonial + "More Testimonials" button, on booking/thank-you pages
-window.CLOSING_TESTIMONIAL = {
-  quote: "This was the best money ive ever invested, I've spent twice as much money on other advertising companies for getting no leads, Andre and his team has been WONDERFUL",
-  name: "Joseph Schmidt",
-  company: "Rev Joes",
-};
+// Booking pages (book-tracked.html + book-untracked.html) — Anthony, Paul, Trevor
+window.BOOKING_TESTIMONIAL_IDS = ["anthony", "paul", "trevor"];
+
+// Thank-you page — all six
+window.THANK_YOU_TESTIMONIAL_IDS = ["jim", "jonathan", "nick", "anthony", "paul", "trevor"];
