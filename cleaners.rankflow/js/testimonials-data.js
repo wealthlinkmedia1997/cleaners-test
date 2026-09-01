@@ -49,9 +49,9 @@ window.TESTIMONIALS = [
     poster: "assets/videos/nick.png",
   },
   {
-    id: "jim",
+    id: "jims",
     quote: "And literally within 30 days I'm at the top - I've had everyone tell me they could get me there but nobody could get me there",
-    name: "Jim",
+    name: "Jims",
     company: "Accent Window Coverings Riverside CA",
     videoSrc: "assets/videos/jim.mp4?v=3",
     poster: "assets/videos/jim-poster.jpg",
