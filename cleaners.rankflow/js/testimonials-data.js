@@ -118,7 +118,7 @@ window.EXPLAINER_VIDEO = {
 };
 
 // Landing page (index.html) hero testimonials, in order
-window.HERO_TESTIMONIAL_IDS = ["todd", "anthony", "paul"];
+window.HERO_TESTIMONIAL_IDS = ["jim", "jonathan", "nick"];
 // Booking pages (book-tracked.html + book-untracked.html), "P.S. check out
 // what our contractor clients have to say" section, in order
 window.BOOKING_TESTIMONIAL_IDS = ["jim", "trevor", "mindi"];
